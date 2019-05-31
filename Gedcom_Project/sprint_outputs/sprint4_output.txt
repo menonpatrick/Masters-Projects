@@ -1,0 +1,187 @@
++-----+----------------------+--------+------------+-----+-------+------------+----------------+----------------+
+|  ID |         Name         | Gender |  Birthday  | Age | Alive |   Death    |     Spouse     |     Child      |
++-----+----------------------+--------+------------+-----+-------+------------+----------------+----------------+
+|  I1 |   MICHAEL /SCOTT/    |   M    | 1983-03-05 |  35 |  True |     NA     |     {'F1'}     |     {'F2'}     |
+|  I2 |    HOLLY /SCOTT/     |   F    | 1985-07-01 |  33 |  True |     NA     |     {'F1'}     |     set()      |
+|  I3 |    MARTIN /SCOTT/    |   F    | 1955-11-28 |  44 | False | 1999-04-10 |     {'F2'}     |     set()      |
+|  I4 |     MARY /SCOTT/     |   F    | 1956-03-19 |  62 |  True |     NA     |  {'F2', 'F3'}  |     set()      |
+|  I5 |    JOHN /HALPERT/    |   M    | 1965-09-13 |  53 |  True |     NA     |     {'F3'}     |     set()      |
+|  I6 |    PAM /HALPERT/     |   F    | 2005-09-03 |  13 |  True |     NA     |     set()      |     {'F3'}     |
+|  I7 |   MICHELLE /SCOTT/   |   F    | 1988-08-25 |  30 |  True |     NA     |     set()      |     {'F2'}     |
+|  I8 |     JIM /SCOTT/      |   M    | 2012-11-28 |  6  |  True |     NA     |     set()      |     {'F1'}     |
+|  I9 |    ANGELA /SCOTT/    |   F    | 2014-04-13 |  4  |  True |     NA     |     set()      |     {'F1'}     |
+| I31 |     John /Smith/     |   M    | 1911-01-17 |  31 | False | 1942-06-15 |    {'F31'}     |     set()      |
+| I32 |  Roberta /Wallace/   |   F    | 1912-03-23 |  73 | False | 1985-09-09 | {'F32', 'F31'} |     set()      |
+| I33 |   Johnson /Smith/    |   M    | 1935-03-23 |  83 |  True |     NA     |    {'F33'}     | {'F32', 'F31'} |
+| I34 |   Jennifer /Smith/   |   F    | 1938-08-07 |  80 |  True |     NA     |     set()      |    {'F32'}     |
+| I10 |  Benjamin /Wallace/  |   M    | 1912-06-03 |  70 | False | 1982-08-09 |    {'F32'}     |     set()      |
+| I11 |  Richard /Wallace/   |   M    | 1948-08-08 |  70 |  True |     NA     |    {'F34'}     |    {'F32'}     |
+| I12 |  Richard /Wallace/   |   M    | 1948-08-08 | -13 | False | 1935-09-09 |    {'F34'}     |    {'F32'}     |
+| I20 |    Susan /Smith/     |   F    | 1942-11-10 |  18 | False | 1960-07-30 | {'F33', 'F35'} |     set()      |
+| I21 |    Rober /Smith/     |   M    | 1965-05-05 |  53 |  True |     NA     |    {'F35'}     |    {'F33'}     |
+| I25 | Caroline /McDonald/  |   F    | 1952-04-05 |  66 |  True |     NA     |    {'F34'}     |     set()      |
+| I45 |   Cassy /McDonald/   |   F    | 1952-04-05 |  66 |  True |     NA     |     set()      |    {'F44'}     |
+| I46 |   Sarah /McDonald/   |   F    | 1952-04-05 |  66 |  True |     NA     |     set()      |    {'F44'}     |
+| I47 | Catherine /McDonald/ |   F    | 1952-04-05 |  66 |  True |     NA     |     set()      |    {'F44'}     |
+| I48 |   Chasy /McDonald/   |   F    | 1952-04-05 |  66 |  True |     NA     |     set()      |    {'F44'}     |
+| I49 |   Emmy /McDonald/    |   F    | 1952-04-05 |  66 |  True |     NA     |     set()      |    {'F44'}     |
+| I50 |   James /McDonald/   |   M    | 1952-04-05 |  66 |  True |     NA     |    {'F45'}     |    {'F44'}     |
+| I51 |  Roberta /McDonald/  |   F    | 1952-04-05 |  66 |  True |     NA     |     set()      |    {'F44'}     |
+| I52 |   Rosy /McDonald/    |   F    | 1952-04-05 |  66 |  True |     NA     |     set()      |    {'F44'}     |
+| I53 |   Tamel /McDonald/   |   F    | 1952-04-05 |  66 |  True |     NA     |     set()      |    {'F44'}     |
+| I59 |   Julia /McDonald/   |   F    | 1960-04-05 |  58 |  True |     NA     |     set()      |    {'F44'}     |
+| I62 |     Sophia /Mac/     |   F    | 2018-10-23 |  0  | False | 2018-10-24 |    {'F45'}     |    {'F44'}     |
+| I54 |  Sophia /McDonald/   |   F    | 1952-04-05 |  66 |  True |     NA     |     set()      |    {'F44'}     |
+| I55 |   Emily /McDonald/   |   F    | 1952-04-05 |  66 |  True |     NA     |     set()      |    {'F44'}     |
+| I56 |   Jessy /McDonald/   |   F    | 1952-04-05 |  66 |  True |     NA     |     set()      |    {'F44'}     |
+| I57 | Jaquilin /McDonald/  |   F    | 1952-04-05 |  66 |  True |     NA     |     set()      |    {'F44'}     |
+| I58 |  Caitlin /McDonald/  |   F    | 1952-04-05 |  66 |  True |     NA     |     set()      |    {'F44'}     |
+| I90 |  Caitlin /McDonald/  |   F    | 1952-04-05 | 200 | False | 2152-12-30 |     set()      |    {'F44'}     |
+| I63 |  Caitlin /McDonald/  |   F    | 1952-04-05 |  66 |  True |     NA     |     set()      |    {'F44'}     |
+| I64 |  Caitlin /McDonald/  |   F    | 2018-11-30 |  0  | False | 2018-12-30 |     set()      |    {'F44'}     |
+| I60 |  Ronald /McDonald/   |   M    | 1950-04-05 |  68 |  True |     NA     |    {'F44'}     |     set()      |
+| I61 |  Ronnie /McDonald/   |   F    | 1958-04-05 |  60 |  True |     NA     |     set()      |    {'F44'}     |
+| I70 |     Rosy /Trump/     |   F    | 1952-04-05 |  66 |  True |     NA     |    {'F46'}     |     set()      |
+| I71 |    Donald /Trump/    |   M    | 1945-04-05 |  73 |  True |     NA     |    {'F46'}     |     set()      |
+| I72 |   Michael /Trump/    |   M    | 1972-06-07 |  46 |  True |     NA     |    {'F47'}     |    {'F46'}     |
+| I73 |    Dorosy /Trump/    |   F    | 1973-07-09 |  45 |  True |     NA     |    {'F48'}     |    {'F46'}     |
+| I74 |    Carol /Trump/     |   F    | 1978-12-12 |  40 |  True |     NA     |    {'F47'}     |     set()      |
+| I75 |    Gal /NotTrump/    |   M    | 1971-11-23 |  47 |  True |     NA     |    {'F48'}     |     set()      |
+| I76 |    Gil /NotTrump/    |   F    | 1995-01-01 |  23 |  True |     NA     |    {'F49'}     |    {'F48'}     |
+| I77 |    Creek /Trump/     |   M    | 1992-02-28 |  26 |  True |     NA     |    {'F49'}     |    {'F47'}     |
+| I80 |   Donald /Glover/    |   M    | 2022-04-28 |  -4 |  True |     NA     |    {'F60'}     |     set()      |
+| I81 |  Donnie /Sullivan/   |   F    | 2022-02-08 |  -4 |  True |     NA     |    {'F60'}     |     set()      |
++-----+----------------------+--------+------------+-----+-------+------------+----------------+----------------+
++-----+------------+------------+------------+--------------------+---------+---------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+|  ID |  Married   |  Divorced  | Husband_ID |    Husband Name    | Wife Id |      Wife Name      |                                                                Children                                                               |
++-----+------------+------------+------------+--------------------+---------+---------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+|  F1 | 2008-05-03 |     NA     |     I1     |  MICHAEL /SCOTT/   |    I2   |    HOLLY /SCOTT/    |                                                              {'I9', 'I8'}                                                             |
+|  F2 | 1978-09-19 | 1968-10-09 |     I3     |   MARTIN /SCOTT/   |    I4   |     MARY /SCOTT/    |                                                              {'I7', 'I1'}                                                             |
+|  F3 | 1999-12-02 |     NA     |     I5     |   JOHN /HALPERT/   |    I4   |     MARY /SCOTT/    |                                                                 {'I6'}                                                                |
+| F31 | 1932-06-25 |     NA     |    I31     |    John /Smith/    |   I32   |  Roberta /Wallace/  |                                                             {'I33', 'I34'}                                                            |
+| F32 | 1945-06-25 |     NA     |    I10     | Benjamin /Wallace/ |   I32   |  Roberta /Wallace/  |                                                      {'I11', 'I12', 'I33', 'I34'}                                                     |
+| F33 |     NA     | 1962-01-01 |    I33     |  Johnson /Smith/   |   I20   |    Susan /Smith/    |                                                                {'I21'}                                                                |
+| F34 | 1975-03-23 |     NA     |    I12     | Richard /Wallace/  |   I25   | Caroline /McDonald/ |                                                                 set()                                                                 |
+| F35 | 1964-04-20 |     NA     |    I21     |   Rober /Smith/    |   I20   |    Susan /Smith/    |                                                                 set()                                                                 |
+| F44 | 1965-03-23 |     NA     |    I60     | Ronald /McDonald/  |   I61   |  Ronnie /McDonald/  | {'I48', 'I56', 'I64', 'I50', 'I47', 'I45', 'I49', 'I53', 'I59', 'I46', 'I62', 'I90', 'I54', 'I58', 'I51', 'I57', 'I63', 'I55', 'I52'} |
+| F45 | 1985-06-08 |     NA     |    I50     |  James /McDonald/  |   I59   |   Julia /McDonald/  |                                                                 set()                                                                 |
+| F46 | 1970-07-08 |     NA     |    I71     |   Donald /Trump/   |   I70   |     Rosy /Trump/    |                                                             {'I73', 'I72'}                                                            |
+| F47 | 1990-09-01 |     NA     |    I72     |  Michael /Trump/   |   I74   |    Carol /Trump/    |                                                                {'I77'}                                                                |
+| F48 | 1992-05-24 |     NA     |    I75     |   Gal /NotTrump/   |   I73   |    Dorosy /Trump/   |                                                                {'I76'}                                                                |
+| F49 | 2015-05-31 |     NA     |    I77     |   Creek /Trump/    |   I76   |    Gil /NotTrump/   |                                                                 set()                                                                 |
+| F50 | 2015-05-31 |     NA     |    I77     |   Creek /Trump/    |   I76   |    Gil /NotTrump/   |                                                                 set()                                                                 |
+| F60 | 2035-05-31 | 2045-10-09 |    I80     |  Donald /Glover/   |   I81   |  Donnie /Sullivan/  |                                                                 set()                                                                 |
++-----+------------+------------+------------+--------------------+---------+---------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+SPRINT 1 ERROR in US02: Individual I21 has a marriage date 1964-04-20 before the individual is born.
+SPRINT 1 ERROR in US02: Individual I62 has a marriage date 1985-06-08 before the individual is born.
+.SPRINT 1 ERROR in US03: Individual I12 has birth date after death date
+.SPRINT 1 ERROR in US04: Family F2's marriage Date(1978-09-19) is later than the divorce date (1968-10-09).
+SPRINT 1 ERROR in US04: Family F33 has divorce date (1962-01-01) but no marriage date.
+.SPRINT 1 ERROR US05: Individual I12 has a marriage date 1975-03-23 after the date of death 1935-09-09.
+SPRINT 1 ERROR US05: Individual I20 has a marriage date 1964-04-20 after the date of death 1960-07-30.
+.SPRINT 1 ERROR US06: Individual I20 of Family F33 has a divorce date 1962-01-01 after the date of death 1960-07-30.
+.SPRINT 1 ERROR in US07: Individual I90 age is more than 150 which is not possible
+.SPRINT 1 ERROR in US08: Found a child I33's birthday 1935-03-23 before the marriage date 1945-06-25 of I33's parent family F32.
+SPRINT 1 ERROR in US08: Found a child I34's birthday 1938-08-07 before the marriage date 1945-06-25 of I34's parent family F32.
+SPRINT 1 ERROR in US08: Found a child I48's birthday 1952-04-05 before the marriage date 1965-03-23 of I48's parent family F44.
+SPRINT 1 ERROR in US08: Found a child I56's birthday 1952-04-05 before the marriage date 1965-03-23 of I56's parent family F44.
+SPRINT 1 ERROR in US08: Found a child I50's birthday 1952-04-05 before the marriage date 1965-03-23 of I50's parent family F44.
+SPRINT 1 ERROR in US08: Found a child I47's birthday 1952-04-05 before the marriage date 1965-03-23 of I47's parent family F44.
+SPRINT 1 ERROR in US08: Found a child I45's birthday 1952-04-05 before the marriage date 1965-03-23 of I45's parent family F44.
+SPRINT 1 ERROR in US08: Found a child I49's birthday 1952-04-05 before the marriage date 1965-03-23 of I49's parent family F44.
+SPRINT 1 ERROR in US08: Found a child I53's birthday 1952-04-05 before the marriage date 1965-03-23 of I53's parent family F44.
+SPRINT 1 ERROR in US08: Found a child I59's birthday 1960-04-05 before the marriage date 1965-03-23 of I59's parent family F44.
+SPRINT 1 ERROR in US08: Found a child I46's birthday 1952-04-05 before the marriage date 1965-03-23 of I46's parent family F44.
+SPRINT 1 ERROR in US08: Found a child I90's birthday 1952-04-05 before the marriage date 1965-03-23 of I90's parent family F44.
+SPRINT 1 ERROR in US08: Found a child I54's birthday 1952-04-05 before the marriage date 1965-03-23 of I54's parent family F44.
+SPRINT 1 ERROR in US08: Found a child I58's birthday 1952-04-05 before the marriage date 1965-03-23 of I58's parent family F44.
+SPRINT 1 ERROR in US08: Found a child I51's birthday 1952-04-05 before the marriage date 1965-03-23 of I51's parent family F44.
+SPRINT 1 ERROR in US08: Found a child I57's birthday 1952-04-05 before the marriage date 1965-03-23 of I57's parent family F44.
+SPRINT 1 ERROR in US08: Found a child I63's birthday 1952-04-05 before the marriage date 1965-03-23 of I63's parent family F44.
+SPRINT 1 ERROR in US08: Found a child I55's birthday 1952-04-05 before the marriage date 1965-03-23 of I55's parent family F44.
+SPRINT 1 ERROR in US08: Found a child I52's birthday 1952-04-05 before the marriage date 1965-03-23 of I52's parent family F44.
+.SPRINT 1 ERROR US10: Individual I21 has a marriage date 1964-04-20 before the age of fourteen.
+SPRINT 1 ERROR US10: Individual I74 has a marriage date 1990-09-01 before the age of fourteen.
+SPRINT 1 ERROR US10: Individual I80 has a marriage date 2035-05-31 before the age of fourteen.
+SPRINT 1 ERROR US10: Individual I81 has a marriage date 2035-05-31 before the age of fourteen.
+.SPRINT 2 ERROR in US12: The husband or the wife or both in family F31 are too old
+SPRINT 2 ERROR in US12: The husband or the wife or both in family F32 are too old
+.SPRINT 2 ERROR in US09: In family F34, the Father with I12 has a death date before birth
+.SPRINT 2 ERROR in US 13: Difference in sibling age is not possible in family F44
+SPRINT 2 ERROR in US 13: Difference in sibling age is not possible in family F44
+SPRINT 2 ERROR in US 13: Difference in sibling age is not possible in family F44
+SPRINT 2 ERROR in US 13: Difference in sibling age is not possible in family F44
+SPRINT 2 ERROR in US 13: Difference in sibling age is not possible in family F44
+SPRINT 2 ERROR in US 13: Difference in sibling age is not possible in family F44
+SPRINT 2 ERROR in US 13: Difference in sibling age is not possible in family F44
+SPRINT 2 ERROR in US 13: Difference in sibling age is not possible in family F44
+SPRINT 2 ERROR in US 13: Difference in sibling age is not possible in family F44
+.SPRINT 2 ERROR in US14: Found multiple births at the same time greater than five in family F44
+.SPRINT 2 ERROR in US15: More than 15 siblings in in family F44
+.SPRINT 2 ERROR in US16: Individual I4's last name /SCOTT/ does not match family F3's name /HALPERT/.
+SPRINT 2 ERROR in US16: Individual I32's last name /Wallace/ does not match family F31's name /Smith/.
+SPRINT 2 ERROR in US16: Individual I33's last name /Smith/ does not match family F32's name /Wallace/.
+SPRINT 2 ERROR in US16: Individual I34's last name /Smith/ does not match family F32's name /Wallace/.
+SPRINT 2 ERROR in US16: Individual I25's last name /McDonald/ does not match family F34's name /Wallace/.
+SPRINT 2 ERROR in US16: Individual I62's last name /Mac/ does not match family F44's name /McDonald/.
+SPRINT 2 ERROR in US16: Individual I73's last name /Trump/ does not match family F48's name /NotTrump/.
+SPRINT 2 ERROR in US16: Individual I76's last name /NotTrump/ does not match family F49's name /Trump/.
+SPRINT 2 ERROR in US16: Individual I76's last name /NotTrump/ does not match family F50's name /Trump/.
+SPRINT 2 ERROR in US16: Individual I81's last name /Sullivan/ does not match family F60's name /Glover/.
+.SPRINT 2 ERROR in US17: Individual I20 married descendant I21.
+.SPRINT 2 ERROR in US21: The husband I3 in the family F2 violates correct gender
+.SPRINT 3 ERROR in US 18: Individual I50 married sibling I59.
+SPRINT 3 ERROR in US 18: Individual I62 married sibling I50.
+.SPRINT 3 ERROR in US 19: Individual I76 married cousin I77.
+SPRINT 3 ERROR in US 19: Individual I77 married cousin I76.
+.SPRINT 3 ERROR in US 28: There are not enough children to sort in family F3
+SPRINT 3 ERROR in US 28: There are not enough children to sort in family F33
+SPRINT 3 ERROR in US 28: There are not enough children to sort in family F34
+SPRINT 3 ERROR in US 28: There are not enough children to sort in family F35
+SPRINT 3 ERROR in US 28: There are not enough children to sort in family F45
+SPRINT 3 ERROR in US 28: There are not enough children to sort in family F47
+SPRINT 3 ERROR in US 28: There are not enough children to sort in family F48
+SPRINT 3 ERROR in US 28: There are not enough children to sort in family F49
+SPRINT 3 ERROR in US 28: There are not enough children to sort in family F50
+SPRINT 3 ERROR in US 28: There are not enough children to sort in family F60
+.SPRINT 3 ERROR in US30: List of individuals that are NOT married:
+         I6, I7, I8, I9, I34, I45, I46, I47, I48, I49, I51, I52, I53, I59, I62, I54, I55, I56, I57, I58, I90, I63, I64, I61, I76, I77, I80, I81
+.SPRINT 3 ERROR in US31: List of individuals that are NOT single:
+         I6, I7, I8, I9, I62, I64, I76, I77, I80, I81
+.SPRINT 3 ERROR in US 34: Either the Husband or the wife in family F35 had an age twice or more than the other
+SPRINT 3 ERROR in US 34: Either the Husband or the wife in family F44 had an age twice or more than the other
+.SPRINT 3 ERROR in US35: The person I64 birth date is invalid
+SPRINT 3 ERROR in US35: The person I80 birth date is invalid
+SPRINT 3 ERROR in US35: The person I81 birth date is invalid
+.SPRINT 3 ERROR in US36: The person I90 death date is invalid
+SPRINT 3 ERROR in US36: The person I64 death date is invalid
+.SPRINT 4 ERROR in US01: Individual I90 has death date 2152-12-30 after the current date!
+SPRINT 4 ERROR in US01: Individual I64 has birth date 2018-11-30 after the current date!
+SPRINT 4 ERROR in US01: Individual I64 has death date 2018-12-30 after the current date!
+SPRINT 4 ERROR in US01: Individual I80 has birth date 2022-04-28 after the current date!
+SPRINT 4 ERROR in US01: Individual I81 has birth date 2022-02-08 after the current date!
+SPRINT 4 ERROR in US01: Family F60 has marriage date 2035-05-31 after the current date!
+SPRINT 4 ERROR in US01: Family F60 has divorce date 2045-10-09 after the current date!
+.SPRINT 4 ERROR in US24: Family F50 has the same marriage date and spouse names with Family F49.
+.SPRINT 4 ERROR IN US25: First name Richard is given to more than two members in family F32.
+SPRINT 4 ERROR IN US25: First name Sophia is given to more than two members in family F44.
+SPRINT 4 ERROR IN US25: First name Caitlin is given to more than two members in family F44.
+SPRINT 4 ERROR IN US25: First name Caitlin is given to more than two members in family F44.
+SPRINT 4 ERROR IN US25: First name Caitlin is given to more than two members in family F44.
+.SPRINT 4 ERROR in US27: User I12 has invalid age
+SPRINT 4 ERROR in US27: User I80 has invalid age
+SPRINT 4 ERROR in US27: User I81 has invalid age
+.SPRINT 4 ERROR in US29: List of individuals that are deceased:
+         I3, I31, I32, I10, I12, I20, I62, I90, I64
+.SPRINT 4 ERROR in US33: The child I12 is not alive
+.SPRINT 4 ATTENTION in US38: Individual I3 will have birthday in the next 30 days
+SPRINT 4 ATTENTION in US38: Individual I8 will have birthday in the next 30 days
+SPRINT 4 ATTENTION in US38: Individual I64 will have birthday in the next 30 days
+SPRINT 4 ATTENTION in US38: Individual I74 will have birthday in the next 30 days
+SPRINT 4 ATTENTION in US38: Individual I75 will have birthday in the next 30 days
+.SPRINT 4 ATTENTION in US39: Family F3 will have their anniversary in the next 30 days
+.
+----------------------------------------------------------------------
+Ran 32 tests in 0.130s
+
+OK
